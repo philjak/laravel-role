@@ -25,22 +25,7 @@ Auth::routes();
 Route::get('/', function(){
     return view('welcome');
 })->name('index');
-/**
-// Login Routes
-Route::get('/login', 'Auth\LoginController@showLoginForm')->name('admin.login');
-Route::post('/login/submit', 'Auth\LoginController@login')->name('admin.login.submit');
 
-// Logout Routes
-Route::post('/logout/submit', 'Auth\LoginController@logout')->name('admin.logout.submit');
-
-// Forget Password Routes
-Route::get('/password/reset', 'Auth\ForgetPasswordController@showLinkRequestForm')->name('admin.password.request');
-Route::post('/password/reset/submit', 'Auth\ForgetPasswordController@reset')->name('admin.password.update');
-**/
-
-/**
- * User routes - Non-Authenticated
- */
 Route::group(['middleware' => 'auth:web'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
 });
