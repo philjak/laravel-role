@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8580639801be4374aae35cf86ae8c6d",
+    "content-hash": "22e7b3c210f6dba4c0b3c971dfde2f9e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1734,6 +1734,51 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "masterzero/nextcloud",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MasterZero/laravel-nextcloud-user-management.git",
+                "reference": "84e778f7a9229959a8e5f705b49c96d0e7e73dbf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MasterZero/laravel-nextcloud-user-management/zipball/84e778f7a9229959a8e5f705b49c96d0e7e73dbf",
+                "reference": "84e778f7a9229959a8e5f705b49c96d0e7e73dbf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MasterZero\\Nextcloud\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "masterzero",
+                    "email": "masterzerno@gmail.com"
+                }
+            ],
+            "description": "library for nextcloud user management",
+            "keywords": [
+                "laravel",
+                "nextcloud"
+            ],
+            "support": {
+                "issues": "https://github.com/MasterZero/laravel-nextcloud-user-management/issues",
+                "source": "https://github.com/MasterZero/laravel-nextcloud-user-management/tree/master"
+            },
+            "time": "2018-06-23T05:41:26+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -7719,7 +7764,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "masterzero/nextcloud": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
